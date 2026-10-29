@@ -1,5 +1,7 @@
 # CCSbench
 
+<a href="https://doi.org/10.5281/zenodo.23764690"><img src="https://zenodo.org/badge/1435787520.svg" alt="DOI"></a>
+
 A rebuild of the Critical Code Studies Workbench on top of
 [**bench-kit**](https://github.com/critical-code-studies/bench-kit),
 the shared code used by the SHRDLU, Spacewar!, ELIZA and Melville
@@ -65,3 +67,19 @@ pre-bench-kit CCS-WB codebase.
 
 GPL-3.0-or-later (inherited from CCS-WB-classic v5.2.0 and from
 bench-kit).
+
+## Citation
+
+<a href="https://doi.org/10.5281/zenodo.23764690"><img src="https://zenodo.org/badge/1435787520.svg" alt="DOI"></a>
+
+Archived on Zenodo. The badge above is the concept DOI
+(10.5281/zenodo.23764690), which always resolves to the latest
+archived snapshot of CCSbench. Cite a specific version with its own
+DOI (listed on the Zenodo record under *Versions*).
+
+Suggested citation (v0.9.2):
+
+> Berry, D. M. (2026). *CCSbench: Critical Code Studies Workbench on bench-kit* (v0.9.2). Zenodo. https://doi.org/10.5281/zenodo.23764691
+
+CCSbench continues the pre-bench-kit lineage of
+[CCS-WB-classic](https://doi.org/10.5281/zenodo.23714574).
