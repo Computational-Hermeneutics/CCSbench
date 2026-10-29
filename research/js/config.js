@@ -36,6 +36,8 @@
       inside: 'A project the user builds in the browser: files held exactly as given, with annotations (six types: Observation, Question, Metaphor, Pattern, Context, Critique) and repair records (hibi / yobitsugi / kake, after the forms of kintsugi) kept alongside, never written back into the held files.',
       sources: 'The files the user brings in. The sample corpus from CCS-WB-classic (FLOW-MATIC 1958 through Apollo 11 Comanche055 1969) will land in the builder’s blank project when bench-kit Stage 1 (runtime versions) is released.',
       code: 'https://github.com/Computational-Hermeneutics/CCSbench',
+      doi: '10.5281/zenodo.23764690',
+      doiVersion: '10.5281/zenodo.23764691',
       catalogue: { skip: [], held: 'held as source' }
     },
     theme: { label: 'CCSbench', note: 'light text on a dark ground (the default)' },
