@@ -1,0 +1,37 @@
+{
+  "upload_type": "software",
+  "title": "CCSbench: Critical Code Studies Workbench on bench-kit",
+  "creators": [
+    {
+      "name": "Berry, David M.",
+      "affiliation": "University of Sussex"
+    }
+  ],
+  "license": "GPL-3.0-or-later",
+  "access_right": "open",
+  "keywords": [
+    "critical code studies",
+    "code hermeneutics",
+    "software studies",
+    "digital humanities",
+    "code annotation",
+    "close reading",
+    "software as cultural artefact",
+    "bench-kit"
+  ],
+  "description": "The successor to CCS-WB-classic, rebuilt on the critical-code-studies/bench-kit framework shared with the SHRDLU, Spacewar!, ELIZA and Melville benches. CCSbench is a browser-based project builder for the close reading of code as cultural artefact: six typed line-anchored annotations (Observation, Question, Metaphor, Pattern, Context, Critique), bench-kit's Kintsugi repair register (hibi / yobitsugi / kake) with gold rendering of mended lines and Flatten-to-child-version, side-by-side comparison of two files within one project (Beside) and of two versions of one program (Collate / Genealogy / Book's Compare), and a settings panel for the project's own identity, references, language and GitHub locations. The AI module from CCS-WB-classic has been dropped for the v1 line.",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23714574",
+      "relation": "continues",
+      "resource_type": "software",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://github.com/critical-code-studies/bench-kit",
+      "relation": "requires",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ]
+}
