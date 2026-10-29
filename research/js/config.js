@@ -18,6 +18,7 @@
     store: 'ccsbench.',
     editable: true,
     annotationTypes: true,
+    samples: true,
     base: 'https://computational-hermeneutics.github.io/CCSbench/research/',
     repo: 'https://github.com/Computational-Hermeneutics/CCSbench',
     refs: { names: { v1: 'CCS1' }, prefix: 'CCS-', dir: 'source' },
