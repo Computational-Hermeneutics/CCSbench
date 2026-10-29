@@ -1,16 +1,19 @@
 # CCSbench
 
 A rebuild of the Critical Code Studies Workbench on top of
-[**bench-kit**](https://github.com/critical-code-studies/bench-kit) —
+[**bench-kit**](https://github.com/critical-code-studies/bench-kit),
 the shared code used by the SHRDLU, Spacewar!, ELIZA and Melville
 benches. Sibling in the *-bench family alongside
 [**LLMbench**](https://github.com/dmberry/LLMbench).
 
-> This repository is **early scaffolding**. Active design work is in
-> progress; the first release (v1.0.0) ships when bench-kit itself
-> reaches 1.0 — the point at which Stages 0–2 of the bench-kit
-> *project builder* land (settings-definable bench config, runtime
-> versions, storage adapter + project file). Until then, use
+> **Status: early scaffolding.** This repository holds the bench-kit
+> template customised for CCSbench, pinned at
+> [bench-kit v0.84.0](https://github.com/critical-code-studies/bench-kit/releases/tag/v0.84.0)
+> (Stage 3 of the hand-built project: annotation types, Beside two-file
+> comparison, Kintsugi repairs). The first release (v1.0.0) ships when
+> bench-kit itself reaches 1.0, bundling Stages 0 through 2 of the
+> *project builder* (settings-definable bench config, runtime versions,
+> storage adapter and project file). Until then, use
 > [**CCS-WB-classic**](https://github.com/Computational-Hermeneutics/CCS-WB-classic)
 > (pre-bench-kit, frozen at v5.2.0).
 
@@ -20,24 +23,38 @@ benches. Sibling in the *-bench family alongside
   annotations (Observation, Question, Metaphor, Pattern, Context,
   Critique) over any file the user brings in.
 - **Kintsugi repair**, using bench-kit's existing repair register
-  (`hibi` / `yobitsugi` / `kake` / `mount`) so builder-made and
-  published benches share one renderer. Held files are never mutated;
-  repairs are overlaid in gold at read time. An opt-in *flatten*
-  action can derive a child version with the repairs applied in
-  place.
-- **Side-by-side comparison** of two files within one project, and of
-  two versions of one program (via bench-kit's Collate, Genealogy and
-  Book's Compare).
-- **A project builder** — users build a bench by hand in the browser
-  or in a desktop wrapper (Tauri is the first-choice standalone
-  target), without needing a repository up front. Finished projects
-  export as static, citable benches.
+  (`hibi` / `yobitsugi` / `kake`) so builder-made and published benches
+  share one renderer. Held files are never mutated; repairs are
+  overlaid in gold at read time. An opt-in *flatten* action derives a
+  child version with the repairs applied in place.
+- **Side-by-side comparison** of two files within one project (Beside,
+  landed in bench-kit 0.84.0) and of two versions of one program (via
+  the kit's existing Collate, Genealogy and Book's Compare).
+- **A project builder**. Users build a bench by hand in the browser or
+  in a desktop wrapper (Tauri is the first-choice standalone target),
+  without needing a repository up front. Finished projects export as
+  static, citable benches.
 - **Local-first storage** with the Supabase cloud ring from
-  CCS-WB-classic available as one optional backend.
-- **AI dialogue as an opt-in module** — the browser-direct provider
-  roster from CCS-WB-classic (Anthropic, OpenAI, Google, Ollama,
-  OpenRouter, Hugging Face, OpenAI-compatible), with keys in
-  `localStorage`.
+  CCS-WB-classic available as one optional backend if the user wants it.
+
+The LLM / AI-dialogue module from CCS-WB-classic has been dropped for
+the v1 line. The classic repository preserves that implementation if a
+reader needs it.
+
+## Running locally
+
+A plain static site: no build step, no framework. Any static file
+server works.
+
+```
+git clone --recursive https://github.com/Computational-Hermeneutics/CCSbench.git
+cd CCSbench
+python3 -m http.server 8080
+# open http://localhost:8080/research/
+```
+
+If you cloned without `--recursive`, pull the bench-kit submodule:
+`git submodule update --init --recursive`.
 
 ## History
 
@@ -46,4 +63,5 @@ pre-bench-kit CCS-WB codebase.
 
 ## Licence
 
-GPL-3.0-or-later (inherited from CCS-WB-classic v5.2.0).
+GPL-3.0-or-later (inherited from CCS-WB-classic v5.2.0 and from
+bench-kit).
