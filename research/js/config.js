@@ -13,7 +13,7 @@
   'use strict';
   root.SW.BENCH = {
     name: 'CCSbench',
-    title: 'Critical Code Studies Workbench',
+    title: 'CCSbench',
     slug: 'ccsbench',
     store: 'ccsbench.',
     editable: true,
