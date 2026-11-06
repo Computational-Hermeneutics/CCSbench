@@ -67,7 +67,7 @@
     compare: { comment: '#', normalised: false, reading: 'Reading',
                supplied: ['support files', 'Include the support files, not only the program files'] },
     comparePrefix: 'CCSbench: ',
-    genealogy: { set: ['v1'], line: 'main', lineNames: { main: 'The main line' } },
+    genealogy: { on: true, set: ['v1'], line: 'main', lineNames: { main: 'The main line' } },
     figureNum: { print: '#8d2b3f', paper: '#8d2b3f', phosphor: '#c48b7a' },
     paratexts: { org: 'Computational-Hermeneutics', repo: 'ccsbench_paratexts', cache: 'ccsbench-paratexts' },
     examples: { date: 'e.g. 1965, or June 1965', archive: 'e.g. Computer History Museum', versions: 'e.g. v1',
