@@ -2,6 +2,10 @@
 
 Changes to the research bench (`research/`). The bench keeps its own version numbers, raised by 0.0.1 with each change (the `?v=` on every script and stylesheet in `index.html`); this file records the versions published, newest first.
 
+## 0.1.104 (2026-11-07)
+
+- kit 1.8.2: the Library's Key work mark, tags, relevance levels; a note added no longer doubled
+
 ## 0.1.103 (2026-11-07)
 
 - kit 1.4.0: the Library, its covers, filters, notes and ratings; Genealogy stays on, as set here
