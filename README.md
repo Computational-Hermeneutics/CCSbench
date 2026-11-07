@@ -87,3 +87,5 @@ Suggested citation (v0.9.2):
 
 CCSbench continues the pre-bench-kit lineage of
 [CCS-WB-classic](https://doi.org/10.5281/zenodo.23714574).
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23764690.svg)](https://doi.org/10.5281/zenodo.23764690)
